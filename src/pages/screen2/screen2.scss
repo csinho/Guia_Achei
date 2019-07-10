@@ -1,0 +1,28 @@
+page-screen2 {
+    .argolas {
+      height: 60%;
+      background-image: linear-gradient(to bottom, blue, #fff);
+    }
+    .argolas_1 {
+      top: 45%;
+      //position: relative;
+      border-radius: 100px 100px 0px 0px;
+     // height: 80%;
+      background-color: rgb(255, 255, 255);
+    }
+  
+    .responsivo {
+      max-width: 1080px;
+      width: 100%;
+      height: auto;
+    }
+    .responsivo img {
+      max-width: 1080px; /* Máximo da largura da imagem */
+      width: 100%;
+      max-height: 500px; /* Máximo da altura da imagem */
+      min-height: auto; /* Mínimo da altura, por padrão “auto” */
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+  }
+  

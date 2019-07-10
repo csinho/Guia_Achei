@@ -1,18 +1,88 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar class="banner_home">
     <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
+      <ion-icon color="light" name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    <div class="nav">
+      <img src="assets/imgs/novo.png" width="80%">
+    </div>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h3>Ionic Menu Starter</h3>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+<ion-content>
+  <div class="argolas">
+    <div class="slide">
+      <ion-slides class="animated fadeInDownBig" padding paginationType autoplay="3000" loop=true spaceBetween="10"
+        slidesPerView="4" style="height: 65vh">
+        <ion-slide *ngFor="let cat of categorias" (click)="buscarGuias(cat.cate)">
+          <ion-icon id="icon_cat" name="{{cat.icon}}"></ion-icon>
+          <p class="text_slide">{{ cat.cate }}</p>
+        </ion-slide>
+      </ion-slides>
+    </div>
+    <div class="argolas_1">
+      <ion-slides padding pager initialSlide=0 loop=true autoplay=2000 speed=2000 spaceBetween="10">
+        <ion-slide class="responsivo" *ngFor="let item of banner_premium">
+          <img src="{{item.img}}">
+        </ion-slide>
+      </ion-slides>
+    </div>
+  </div>
+  <div class="linha"></div>
+  <div cards>
+    <div class="grid-full">
+      <ion-row>
+        <ion-col class="animated fadeInDownBig">
+          <ion-card class="container" (click)="irPara('c')">
+            <h1>
+              <ion-icon name="ios-pizza-outline" color="primary"></ion-icon>
+            </h1>
+            <p>Onde Comer</p>
+          </ion-card>
+        </ion-col>
+        <ion-col class="animated fadeInDownBig">
+          <ion-card class="container"  (click)="irPara('i')">
+            <h1>
+              <ion-icon name="ios-map-outline" color="primary"></ion-icon>
+            </h1>
+            <p>Onde ir</p>
+          </ion-card>
+        </ion-col>
+        <ion-col class="animated fadeInDownBig">
+          <ion-card class="container"  (click)="irPara('b')">
+            <h1>
+              <ion-icon name="ios-beer-outline" color="primary"></ion-icon>
+            </h1>
+            <p>Onde Beber</p>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+  <div class="wrapper">
+    <p>Destaques do Bairro</p>
+  </div>
+
+  <ion-slides padding initialSlide=0 loop=true autoplay=2000 speed=2000 spaceBetween="10" slidesPerView="2">
+    <ion-slide *ngFor="let item of banner_cliente" (click)="detalhes(item)">
+      <img class="img_destaques" src="{{item.img}}">
+      <p style="font-size: 1.3rem">{{item.nome}}</p>
+    </ion-slide>
+  </ion-slides>
+
+  <div class="linha_"></div>
+
+  <div class="wrapper">
+    <p>Vagas de Empregos</p>
+  </div>
+
+  <ion-slides padding initialSlide=0 loop=true autoplay=2000 speed=2000 spaceBetween="10" slidesPerView="3">
+    <ion-slide *ngFor="let item of banner_cliente">
+      <img class="img_destaques" src="{{item.img}}">
+      <p style="font-size: 1.3rem">Vaga para: <b>{{item.vaga}}</b></p>
+    </ion-slide>
+  </ion-slides>
+
 </ion-content>

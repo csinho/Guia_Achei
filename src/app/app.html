@@ -1,17 +1,24 @@
 <ion-menu [content]="content" type="overlay">
   <ion-header>
-    <ion-toolbar>
-      <ion-title>Menu</ion-title>
+    <ion-toolbar color="banner" class="banner">
+      <img src="assets/imgs/novo.png" />
     </ion-toolbar>
   </ion-header>
 
   <ion-content>
-    <ion-list>
-      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
-        {{p.title}}
-      </button>
-    </ion-list>
+    <div class="banner_list">
+      <ion-list>
+        <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+          <ion-icon [name]="p.icon" item-start></ion-icon>
+          <span>{{p.title}}</span>
+        </button>
+      </ion-list>
+    </div>
   </ion-content>
+  <ion-footer>
+    <ion-toolbar>
+    </ion-toolbar>
+  </ion-footer>
 
 </ion-menu>
 

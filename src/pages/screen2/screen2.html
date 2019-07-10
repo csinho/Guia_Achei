@@ -1,22 +1,31 @@
-<ion-content>
+<ion-content class="container">
   <ion-fab left top>
     <button navPop mini ion-fab color="primary">
       <ion-icon name="ios-arrow-back-outline"></ion-icon>
     </button>
   </ion-fab>
-  <div class="argolas">
-    <div class="responsivo">
-      <img src="{{item.img}}">
-    </div>
-
-    <div class="argolas_1">
-      <!-- <ion-slides padding pager initialSlide=0 loop=true autoplay=2000 speed=2000 spaceBetween="10">
-        <ion-slide *ngFor="let item of banner_premium">
-          <img class="img" src="{{item.img}}">
-        </ion-slide>
-      </ion-slides> -->
-
-    </div>
+  <div class="responsivo">
+    <img src="{{item.img}}">
   </div>
+  <ion-card padding class="card">
+    <h3>{{item.nome}}</h3>
+    <br>
+    <h4>{{item.descricao}}</h4>
+    <div class="linha_1"></div>
+    <div class="wrapper">
+      <p>Localização</p>
+    </div>
+    <ion-icon name="ios-pin-outline"></ion-icon>
+    <h2>{{item.endereco.cidade}}&nbsp;/&nbsp;{{item.endereco.bairro}}</h2>
+    <br>
+    <h4>{{item.endereco.rua}},&nbsp;{{item.endereco.numero}}</h4>
+    <div class="linha_2"></div>
+    <p>Fotos</p>
+    <div class="linha_3"></div>
+  </ion-card>
+  <div class="retangulo">
+    <img src="{{item.img}}">
+  </div>
+
 
 </ion-content>

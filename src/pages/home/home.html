@@ -66,7 +66,7 @@
   </div>
 
   <ion-slides padding initialSlide=0 loop=true autoplay=2000 speed=2000 spaceBetween="10" slidesPerView="2">
-    <ion-slide *ngFor="let item of banner_cliente" (click)="detalhes(item)">
+    <ion-slide *ngFor="let item of cliente" (click)="detalhes(item)">
       <img class="img_destaques" src="{{item.img}}">
       <p style="font-size: 1.3rem">{{item.nome}}</p>
     </ion-slide>
@@ -79,7 +79,7 @@
   </div>
 
   <ion-slides padding initialSlide=0 loop=true autoplay=2000 speed=2000 spaceBetween="10" slidesPerView="3">
-    <ion-slide *ngFor="let item of banner_cliente">
+    <ion-slide *ngFor="let item of cliente">
       <img class="img_destaques" src="{{item.img}}">
       <p style="font-size: 1.3rem">Vaga para: <b>{{item.vaga}}</b></p>
     </ion-slide>

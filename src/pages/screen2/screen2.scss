@@ -1,28 +1,121 @@
 page-screen2 {
-    .argolas {
-      height: 60%;
-      background-image: linear-gradient(to bottom, blue, #fff);
-    }
-    .argolas_1 {
-      top: 45%;
-      //position: relative;
-      border-radius: 100px 100px 0px 0px;
-     // height: 80%;
-      background-color: rgb(255, 255, 255);
-    }
-  
-    .responsivo {
-      max-width: 1080px;
-      width: 100%;
-      height: auto;
-    }
-    .responsivo img {
-      max-width: 1080px; /* Máximo da largura da imagem */
-      width: 100%;
-      max-height: 500px; /* Máximo da altura da imagem */
-      min-height: auto; /* Mínimo da altura, por padrão “auto” */
-      background-size: 100%;
-      background-repeat: no-repeat;
-    }
+  .argolas {
+    height: 60%;
+    background-image: linear-gradient(to bottom, blue, #fff);
   }
-  
+  .argolas_1 {
+    top: 45%;
+    //position: relative;
+    border-radius: 100px 100px 0px 0px;
+    // height: 80%;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .responsivo {
+    max-width: 1080px;
+    width: auto;
+    height: 30%;
+  }
+  .responsivo img {
+    max-width: 1080px; /* Máximo da largura da imagem */
+    width: 100%;
+    max-height: 120%; /* Máximo da altura da imagem */
+    min-height: 40%; /* Mínimo da altura, por padrão “auto” */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+  }
+
+  .container {
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 255, 0.534), #fff);
+  }
+
+  .card {
+    position: absolute;
+    top: 25%;
+    height: 80%;
+    width: 90%;
+    margin-left: 5%;
+    background: #fff;
+    border-radius: 2px 2px 0px 0px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.267);
+  }
+
+  .retangulo {
+    position: absolute;
+    top: 21%;
+    margin-left: 70%;
+    width: 90px;
+    height: 90px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.267);
+  }
+  .retangulo img {
+    border-radius: 100%;
+    max-width: 1080px; /* Máximo da largura da imagem */
+    width: 100%;
+    max-height: 500px; /* Máximo da altura da imagem */
+    min-height: auto; /* Mínimo da altura, por padrão “auto” */
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .linha_1 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border: 0.5px solid; /* Adiciona borda esquerda na div como ser fosse uma linha.*/
+    color: rgba(161, 161, 161, 0.144);
+  }
+  .linha_2 {
+    margin-top: 50px;
+    margin-bottom: 15px;
+    border: 0.5px solid; /* Adiciona borda esquerda na div como ser fosse uma linha.*/
+    color: rgba(161, 161, 161, 0.144);
+  }
+  .linha_3 {
+    margin-top: 200px;
+    margin-bottom: 15px;
+    border: 0.5px solid; /* Adiciona borda esquerda na div como ser fosse uma linha.*/
+    color: rgba(161, 161, 161, 0.144);
+  }
+
+  .wrapper {
+    height: 2%;
+    min-height: 4%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+
+  .wrapper p {
+    color: rgba(0, 0, 255, 0.452);
+    font-size: 1.4rem;
+  }
+
+  .card h2 {
+    font-weight: 200;
+    font-size: 1.7rem;
+  }
+  .card h3 {
+    color: blue;
+    font-weight: 400;
+    font-size: 2rem;
+  }
+  .card h4 {
+    font-weight: 200;
+    font-size: 1.3rem;
+  }
+  .card p {
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+}

@@ -12,7 +12,7 @@ export class HomePage {
   /* Variaveis Globais */
   public categorias = [];
   public banner_premium = [];
-  public banner_cliente = [];
+  public cliente = [];
   public Empregos_vagas = [];
 
   /*--------------------------------------*/
@@ -126,27 +126,136 @@ export class HomePage {
       }
     ];
 
-    this.banner_cliente = [
+    this.cliente = [
       {
         "img": "assets/imgs/padaria_agostino.jpg",
         "nome": "Padaria Agostinho",
         "vaga": "Padeiro",
-      }, {
-        "img": "assets/imgs/chapadao.jpg",
-        "nome": "Chapadão Matérial de Construção",
-        "vaga": "Atendente",
-      }, {
-        "img": "assets/imgs/dois_irmao.png",
-        "nome": "Mercados 2 irmãos",
-        "vaga": "Repositor",
-      }, {
-        "img": "assets/imgs/barber_shopp.png",
-        "nome": "Baber Shopp",
-        "vaga": "Serviços Gerais",
-      }, {
+        "e-mail": "pada.agostinho@gmail.com",
+        "descricao": "Temos produtos de ótima qualidade de produção própria de maneira natural. Venha nos conhece!",
+        "informacao": "Possui estacionamento",
+        "forma_pagamento": "VISA",
+        "endereco": {
+          "cep": "41.300-400",
+          "pais": "Brasil",
+          "estado": "Bahia",
+          "cidade": "Salvador",
+          "bairro": "Valéria",
+          "rua": "Rua da Matriz",
+          "numero": "35"
+        },
+        "contato": {
+          "fixo": "71 3325-6585",
+          "celular": "71 99654-8555"
+        },
+        "redes_sociais": {
+          "facebook": "",
+          "instagram": "",
+        },
+      },
+      {
         "img": "assets/imgs/pet_style.jpg",
         "nome": "Pet Stile Shopp",
         "vaga": "veterinário",
+        "e-mail": "pet.shop@gmail.com",
+        "descricao": "Um dia descobrimos que beijar uma pessoa para esquecer outra, é bobagem. Você não só não esquece a outra pessoa como pensa muito mais nela...   Um dia nós percebemos que as mulheres têm instinto caçador e fazem qualquer homem sofrer ...        Um dia descobrimos que se apaixonar é inevitável...         Um dia percebemos que as melhores provas de amor são as mais simples...         Um dia percebemos que o comum não nos atrai...        Um dia saberemos que ser classificado como bonzinho não é bom... ",
+        "informacao": "Possui estacionamento",
+        "forma_pagamento": "VISA",
+        "endereco": {
+          "cep": "41.300-324",
+          "pais": "Brasil",
+          "estado": "Bahia",
+          "cidade": "Salvador",
+          "bairro": "Valéria",
+          "rua": "Rua borges",
+          "numero": "535"
+        },
+        "contato": {
+          "fixo": "71 3325-6532",
+          "celular": "71 96325-8555"
+        },
+        "redes_sociais": {
+          "facebook": "",
+          "instagram": "",
+        },
+      },
+      {
+        "img": "assets/imgs/barber_shopp.png",
+        "nome": "Baber Shopp",
+        "vaga": "Serviços Gerais",
+        "e-mail": "baber@gmail.com",
+        "descricao": "Temos produtos de ótima qualidade de produção própria de maneira natural. Venha nos conhece!",
+        "informacao": "Possui estacionamento",
+        "forma_pagamento": "VISA",
+        "endereco": {
+          "cep": "41.300-120",
+          "pais": "Brasil",
+          "estado": "Bahia",
+          "cidade": "Salvador",
+          "bairro": "Valéria",
+          "rua": "Rua da Glória",
+          "numero": "35"
+        },
+        "contato": {
+          "fixo": "71 3325-6545",
+          "celular": "71 96524-8555"
+        },
+        "redes_sociais": {
+          "facebook": "",
+          "instagram": "",
+        },
+      },
+      {
+        "img": "assets/imgs/dois_irmao.png",
+        "nome": "Mercados 2 irmãos",
+        "vaga": "Repositor",
+        "e-mail": "m.dois@gmail.com",
+        "descricao": "Temos produtos de ótima qualidade de produção própria de maneira natural. Venha nos conhece!",
+        "informacao": "Possui estacionamento",
+        "forma_pagamento": "MASTER",
+        "endereco": {
+          "cep": "41.650-400",
+          "pais": "Brasil",
+          "estado": "Bahia",
+          "cidade": "Salvador",
+          "bairro": "Valéria",
+          "rua": "Rua a",
+          "numero": "355"
+        },
+        "contato": {
+          "fixo": "71 3265-8585",
+          "celular": "71 96547-8555"
+        },
+        "redes_sociais": {
+          "facebook": "",
+          "instagram": "",
+        },
+      },
+      {
+        "img": "assets/imgs/chapadao.jpg",
+        "nome": "Chapadão Matérial de Construção",
+        "vaga": "Atendente",
+        "e-mail": "mt.construcao@gmail.com",
+        "descricao": "Temos produtos de ótima qualidade de produção própria de maneira natural. Venha nos conhece!",
+        "informacao": "Possui estacionamento",
+        "forma_pagamento": "ELO",
+        "endereco": {
+          "cep": "41.300-600",
+          "pais": "Brasil",
+          "estado": "Bahia",
+          "cidade": "Salvador",
+          "bairro": "Valéria",
+          "rua": "Rua nove de julho",
+          "numero": "653"
+        },
+        "contato": {
+          "fixo": "71 3325-6584",
+          "celular": "71 96325-8555"
+        },
+        "redes_sociais": {
+          "facebook": "",
+          "instagram": "",
+        },
       }
     ];
 
